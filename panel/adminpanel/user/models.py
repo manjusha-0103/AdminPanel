@@ -14,7 +14,7 @@ class UserSelection(models.Model):
         return self.user.username
 
     def save_to_firestore(self):
-        key_path= 'C:/Users/mgkco/OneDrive/job/Internship/sigaram tech/Admin panel/main/creadentials/adminpanel-409509-65f29fa144c6.json'
+        key_path= 'path to your firbase key'
         db = firestore.Client.from_service_account_json(key_path)
         collection_ref = db.collection('sigaram_test_collection')
 
